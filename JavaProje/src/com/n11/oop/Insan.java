@@ -21,5 +21,28 @@ public class Insan  {
         System.out.println("Kişinin adı:" + adi+ " kişinin soyadı: " + soyadi);
     }
 
+    //boş constructor
+    public Insan()
+    {
+
+    }
+
+    public Insan(String isim,String soyadi)
+    {
+        ad = isim;
+        soyad = soyadi;
+    }
+
+
+    public Insan(String ad,String soyad,int yas,double maas,boolean cinsiyet)
+    {
+        this.ad = ad;
+        this.soyad = soyad;
+        this.yas = yas;
+        this.maas  = maas;
+        this.cinsiyet = cinsiyet;
+    }
+
+
 
 }

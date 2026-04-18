@@ -1,5 +1,7 @@
 package com.n11.oop;
 
+import com.n11.oop.abstracts.Calisan;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -15,6 +17,10 @@ public class Main {
         i.maas = 3.14;
         i.cinsiyet = true;
         i.uyu();
+
+        Insan i2 = new Insan("Hakan","Yılmaz");
+
+        Insan i3 = new Insan("Metin","yıldaz",33,3.14,true);
 
         Anne a = new Anne();
         a.ad = "Fahriye";
@@ -45,6 +51,21 @@ public class Main {
 
         UsluCocuk us = new UsluCocuk();
         us.adSoyadSifatYaz("Mehmet","Yıldız","Usludur");
+
+        String[] gunler = new String[7];
+        gunler[0] = "pazartesi";
+        gunler[1] = "salı";
+        gunler[2] = "çarşamba";
+        gunler[3] = "perşembe";
+        gunler[4] = "cuma";
+        gunler[5] = "cumartesi";
+        gunler[6] = "pazar";
+        for(int z=0; z< gunler.length;z++)
+        {
+            System.out.println(gunler[z]);
+        }
+
+
 
 
     }
