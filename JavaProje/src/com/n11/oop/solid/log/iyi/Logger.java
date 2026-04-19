@@ -9,8 +9,8 @@ public class Logger {
         this.iLog = iLog;
     }
 
-    public void LogYaz(String mesaj)
+    public String LogYaz(String mesaj)
     {
-        this.iLog.log(mesaj);
+       return this.iLog.log(mesaj);
     }
 }

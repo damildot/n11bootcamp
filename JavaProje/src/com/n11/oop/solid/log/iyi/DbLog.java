@@ -2,9 +2,9 @@ package com.n11.oop.solid.log.iyi;
 
 public class DbLog implements  ILog{
     @Override
-    public boolean log(String value) {
+    public String log(String value) {
 
-        System.out.println(value + " db ye kaydedildi");
-        return true;
+        return value + " db ye kaydedildi";
+
     }
 }
