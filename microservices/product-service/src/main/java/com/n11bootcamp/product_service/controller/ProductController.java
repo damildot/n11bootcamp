@@ -98,6 +98,21 @@ public class ProductController {
         ));
     }
 
+    @GetMapping("{id}")
+    public ResponseEntity<Product> getProductById(
+            @PathVariable("id") Long productId,
+            @RequestHeader(value = "X-User-Id", required = false) Long userId,
+            @RequestHeader(value = "X-Platform", required = false, defaultValue = "WEB") String platform,
+            @RequestHeader(value = "X-Source", required = false, defaultValue = "REACT") String source,
+            @RequestHeader(value = "X-Session-Id", required = false, defaultValue = "unknown") String sessionId
+    ) {
+        ResponseEntity<Product> response = productService.getProductById(productId);
+
+
+
+        return response;
+    }
+
     // ------------------ ✅ i18n DTO endpoint'ler (korundu) ------------------
 
     @GetMapping("/i18n")
